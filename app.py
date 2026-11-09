@@ -49,3 +49,9 @@ with gecmis_sutun:
     st.write("⬆️ **Kasa 2 - ETH:** +%15'te kapandı")
     st.write("⬇️ **Kasa 3 - SOL:** Stop-Loss (-%5) çalıştı")
     st.write("ℹ️ **Kasa 4 - XRP:** Fırsat yok, beklemede")
+ import urllib.request
+try:
+    ip = urllib.request.urlopen('https://api.ipify.org').read().decode('utf8')
+    st.info(f"🌐 Bot Bulut IP Adresi: {ip}")
+except:
+    pass
